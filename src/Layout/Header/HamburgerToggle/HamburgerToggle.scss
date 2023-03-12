@@ -1,21 +1,17 @@
 .hamburger{
-  display: none;
-  row-gap: 5px;
+  display: flex;
+  row-gap: 6px;
   flex-direction: column;
   background: transparent;
   position: relative;
-  width: 18px;
-  height: 18px;
+  width: 24px;
   z-index: 100;
   &__stripe{
     transition: .2s ease-in;
-    width: 18px;
-    height: 2px;
+    width: 24px;
+    height: 3px;
     border-radius: 2px;
-    background: #fff;
-  }
-  &_short{
-    width: 12px
+    background: #393939;
   }
   &_active{
     transition: 2s ease-in;
@@ -41,23 +37,17 @@
     }
   }
 }
-@media (max-width: 1440px) {
-}
-
-@media (max-width: 1201px) {
-}
-
-@media (max-width: 1025px) {
+@media (min-width: 1000px ) {
   .hamburger{
-    display: flex;
+    display: none;
   }
 }
 
-@media (max-width: 769px ) {
- .hamburger{
-   display: flex;
- }
+@media (min-width: 769px ) {
 }
 
-@media (max-width: 481px ) {
+@media (min-width: 1025px) {
+}
+
+@media (min-width: 1201px) {
 }

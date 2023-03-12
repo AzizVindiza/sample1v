@@ -2,7 +2,8 @@ import React from 'react';
 
 const NotFound = () => {
     return (
-        <div>
+        <div className="notfound">
+            Страница не найдена
         </div>
     );
 };

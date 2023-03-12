@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 import logo from './logo.png'
 import "./Header.scss"
@@ -37,7 +37,7 @@ const Header = () => {
         <header className="header">
             <div className="header__container container ">
                 <NavLink className="header__logo" to='/'>
-                    <img src={logo} alt="лого"/>
+                    <img src={logo} alt="Smart International Trading Company logo"/>
                 </NavLink>
                 <HamburgerToggle toggleClass={toggleClass} isActiveHamburger={isActiveHamburger}/>
                 <nav className={`header__menu ${isActiveHamburger ? "header__menu_active" : null}`}>
